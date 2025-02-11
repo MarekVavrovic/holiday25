@@ -66,7 +66,7 @@ container.addEventListener("click", (e) => {
 });
 
 
-//countdown
+
 // Countdown configuration
 const countdowns = {
   aprilArrival: new Date(2025, 3, 11, 16, 5, 11),
@@ -77,7 +77,7 @@ const countdowns = {
   decemberDeparture: new Date(2025, 11, 28, 16, 30, 11),
 };
 
-// Custom labels for each countdown
+// labels for each countdown
 const countdownLabels = {
   aprilArrival: "čas do príletu:",
   aprilDeparture: "čas do odletu:",
@@ -87,7 +87,7 @@ const countdownLabels = {
   decemberDeparture: "čas do odletu:",
 };
 
-// Function to update all countdowns
+//  update all countdowns
 function updateCountdowns() {
   document.querySelectorAll(".deadline").forEach((deadlineElement) => {
     const dataDate = deadlineElement.getAttribute("data-date");
@@ -112,7 +112,7 @@ function calculateTimeLeft(futureDate) {
   const now = new Date().getTime();
   const distance = futureDate.getTime() - now;
 
-  if (distance < 0) return null; // If the time has passed, return null
+  if (distance < 0) return null; 
 
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -122,7 +122,7 @@ function calculateTimeLeft(futureDate) {
   return `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
-// Initialize countdowns and refresh every second
+
 updateCountdowns();
 setInterval(updateCountdowns, 1000);
 
