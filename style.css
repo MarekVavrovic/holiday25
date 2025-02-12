@@ -241,3 +241,13 @@ canvas#neuro {
   pointer-events: none;
   opacity: 0.95;
 }
+
+/* Remove tap highlight effect on mobile */
+.container,.transaction-list,
+.transaction{
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container{
+  -webkit-tap-highlight-color: transparent;
+}
