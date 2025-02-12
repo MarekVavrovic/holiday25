@@ -26,11 +26,11 @@ body {
   text-shadow: 5px 0 10px rgba(227, 222, 222, 0.5),
     0 0 10px rgba(230, 40, 40, 0.5);
 
-  padding: 16px 12px;
-  -webkit-box-shadow: -10px 0px 13px -7px #4c6a48, 10px 0px 13px -7px #000000,
+  padding: 36px 12px;
+  -webkit-box-shadow: -10px 10px 13px -7px #f0ffee, 10px 10px 13px -7px #7f7b7b,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: -10px 0px 13px -7px #6b9475, 10px 0px 13px -7px #5c5c5c,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: -10px 0px 13px -7px #d7efdd, 10px 0px 13px -7px #5c5c5c,
+    5px 5px 15px 5px rgba(96, 94, 94, 0);
 
   width: 400px;
   height: fit-content;
@@ -38,9 +38,9 @@ body {
 
 /* centre title  */
 .list-header {
-  font-size: 30px;
-
-  margin-bottom: 24px;
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom:50px;
   color: #e8eddd;
   display: flex;
   justify-content: center;
@@ -82,7 +82,7 @@ body {
 .transaction {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   padding: 0 12px;
   border-radius: 10px;
   cursor: pointer;
@@ -156,12 +156,14 @@ body {
   font-weight: 700;
   color: #16af01;
   margin-bottom: 4px;
+    margin-block: 1rem;
 }
 
 .subtitle {
   font-family: monospace;
   font-size: 12px;
   color: hsl(240, 79%, 85%);
+  margin-top: -15px;
 }
 
 .transaction-details,
@@ -214,11 +216,13 @@ strong {
     font-size: 1.6rem;
     margin-top: 10px;
   }
+  .list-header{
+    margin-bottom: 25px;
+  }
   .transaction-details,
   .payment-details {
     font-size: 1.5rem;
     gap: 6px;
-
     padding-top: 26px;
   }
 }
