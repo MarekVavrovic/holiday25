@@ -71,7 +71,7 @@ container.addEventListener("click", (e) => {
 const countdowns = {
   aprilArrival: new Date(2025, 3, 11, 16, 5, 11),
   aprilDeparture: new Date(2025, 3, 23, 14, 40, 11),
-  augustArrival: new Date(2025, 7, 20, 14, 15, 11),
+  augustArrival: new Date(2025, 7, 20, 19, 35, 11),
   septemberDeparture: new Date(2025, 8, 5, 16, 30, 11),
   decemberArrival: new Date(2025, 11, 14, 16, 5, 11),
   decemberDeparture: new Date(2025, 11, 28, 16, 30, 11),
