@@ -73,8 +73,8 @@ const countdowns = {
   aprilDeparture: new Date(2025, 3, 23, 14, 40, 11),
   augustArrival: new Date(2025, 7, 20, 19, 35, 11),
   septemberDeparture: new Date(2025, 8, 5, 16, 30, 11),
-  decemberArrival: new Date(2025, 11, 14, 16, 5, 11),
-  decemberDeparture: new Date(2025, 11, 28, 16, 30, 11),
+  decemberArrival: new Date(2025, 11, 19, 17, 30, 11),
+  decemberDeparture: new Date(2025, 11, 30, 12, 55, 11),
 };
 
 // labels for each countdown
