@@ -69,12 +69,12 @@ container.addEventListener("click", (e) => {
 
 // Countdown configuration
 const countdowns = {
-  aprilArrival: new Date(2025, 3, 11, 16, 5, 11),
-  aprilDeparture: new Date(2025, 3, 23, 14, 40, 11),
-  augustArrival: new Date(2025, 7, 20, 19, 35, 11),
-  septemberDeparture: new Date(2025, 8, 5, 16, 30, 11),
-  decemberArrival: new Date(2025, 11, 19, 17, 30, 11),
-  decemberDeparture: new Date(2025, 11, 30, 12, 55, 11),
+  aprilArrival:       new Date(2026, 3, 17, 20, 25, 11),   // 17/04/2026
+  aprilDeparture:     new Date(2026, 3, 29, 15, 30, 11),   // 29/04/2026
+  augustArrival:      new Date(2026, 7, 15, 16, 10, 11),   // 15/08/2026
+  septemberDeparture: new Date(2026, 8,  2, 15, 30, 11),   // 02/09/2026
+  decemberArrival:    new Date(2026, 11, 19, 20,  0, 11),  // 19/12/2026
+  decemberDeparture:  new Date(2027, 0,  2, 14, 55, 11),   // 02/01/2027 14:55:00
 };
 
 // labels for each countdown
@@ -92,6 +92,8 @@ function updateCountdowns() {
   document.querySelectorAll(".deadline").forEach((deadlineElement) => {
     const dataDate = deadlineElement.getAttribute("data-date");
     const futureDate = countdowns[dataDate];
+
+    
 
     if (!futureDate) return; // Skip if the date key is not found
 
